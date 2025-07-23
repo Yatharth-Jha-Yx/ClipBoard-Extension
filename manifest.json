@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Clipboard Drive Sync",
+  "version": "1.0",
+  "description": "Sync clipboard via Google Drive",
+  "permissions": [
+    "identity",
+    "clipboardRead",
+    "clipboardWrite",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.googleapis.com/"
+  ],
+  "oauth2": {
+    "client_id": "YOUR_OAUTH2_CLIENT_ID.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive.appdata",
+      "https://www.googleapis.com/auth/drive.file"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
