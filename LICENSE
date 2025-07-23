@@ -1,3 +1,28 @@
+## 🔐 Privacy Note
+
+- This extension does not use any external servers.
+- Clipboard data is stored as a plain text file in your personal Google Drive (`clipboard_sync.txt`).
+- You are always in control of your data.
+- You may enhance this with encryption in future versions.
+
+---
+
+## 📄 License
+
+MIT License – Free to use and modify.
+
+---
+
+## 🧠 Ideas for Future Updates
+
+- Auto-sync every 60 seconds
+- Encrypted clipboard text using a password
+- Multi-item clipboard history
+- Integration with mobile platforms
+
+---
+
+
 MIT License
 
 Copyright (c) 2025 Yatharth Pradip Jha
