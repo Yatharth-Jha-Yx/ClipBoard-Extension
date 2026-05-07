@@ -2,10 +2,49 @@
 <html>
 <head>
   <title>Clipboard Sync</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      width: 200px;
+      padding: 16px;
+      margin: 0;
+    }
+    .buttons {
+      display: flex;
+      gap: 8px;
+    }
+    button {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      border-radius: 6px;
+      background: #1a73e8;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    button:hover:not(:disabled) {
+      background: #1557b0;
+    }
+    button:disabled {
+      background: #aaa;
+      cursor: not-allowed;
+    }
+    #status {
+      margin-top: 12px;
+      font-size: 13px;
+      min-height: 18px;
+      text-align: center;
+    }
+    #status.error { color: #c5221f; }
+    #status.success { color: #137333; }
+  </style>
 </head>
 <body>
-  <button id="copy">Copy</button>
-  <button id="paste">Paste</button>
+  <div class="buttons">
+    <button id="copy">Copy</button>
+    <button id="paste">Paste</button>
+  </div>
   <p id="status"></p>
   <script src="popup.js"></script>
 </body>
